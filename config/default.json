@@ -1,0 +1,4 @@
+{
+  "mongoURI": "mongodb+srv://prateek123:123prateek@devconnector-9yfzr.mongodb.net/test?retryWrites=true&w=majority",
+  "jwtSecret": "pr%t)(0K&Rm"
+}
