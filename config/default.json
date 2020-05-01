@@ -1,4 +1,6 @@
 {
   "mongoURI": "mongodb+srv://prateek123:123prateek@devconnector-9yfzr.mongodb.net/test?retryWrites=true&w=majority",
-  "jwtSecret": "pr%t)(0K&Rm"
+  "jwtSecret": "pr%t)(0K&Rm",
+  "githubClientId": "c70afb3b21ef462d2c18",
+  "githubSecret": "bd387bc77383903a40e3b48d90f16291835df095"
 }
