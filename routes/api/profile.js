@@ -5,6 +5,7 @@ const request = require("request");
 const config = require("config");
 const User = require("../../models/User");
 const Profile = require("../../models/Profile");
+const Post = require("../../models/Post");
 const { check, validationResult } = require("express-validator");
 
 // @route       GET api/profile/me
@@ -154,7 +155,8 @@ router.get("/user/:userID", async (req, res) => {
 
 router.delete("/", auth, async (req, res) => {
   try {
-    // @todo  - remove users posts
+    // Remove User Post
+    await Post.deleteMany({ user: req.user.id });
 
     // Remove profile
     await Profile.findOneAndRemove({ user: req.user.id });
