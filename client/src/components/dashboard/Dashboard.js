@@ -28,8 +28,8 @@ const Dashboard = ({
         <Fragment>
           <DashboardActions />
 
-          <Experience experience={profile[0].experience} />
-          <Education education={profile[0].education} />
+          <Experience experience={profile.experience} />
+          <Education education={profile.education} />
         </Fragment>
       ) : (
         <Fragment>

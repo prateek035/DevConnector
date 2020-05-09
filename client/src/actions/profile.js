@@ -7,13 +7,11 @@ import { GET_PROFILE, PROFILE_ERROR, UPDATE_PROFILE } from "./types";
 export const getCurrentProfile = () => async (dispatch) => {
   try {
     const res = await axios.get("api/profile/me");
-    console.log("prateke::", res);
     dispatch({
       type: GET_PROFILE,
-      payload: res.data,
+      payload: res.data[0],
     });
   } catch (err) {
-    console.log("mittl", err);
     dispatch({
       type: PROFILE_ERROR,
       payload: { msg: err.response.statusText, status: err.response.status },
