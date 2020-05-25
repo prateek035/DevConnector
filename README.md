@@ -1,6 +1,8 @@
 # DevConnector
-MERN App 
+A full Stack MERN App 
 
-To run the app:
+First Install the dependencies using
+npm install
 
-Use npm run dev
+Later To run the app:
+Use npm run dev command
